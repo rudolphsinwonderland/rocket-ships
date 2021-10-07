@@ -4,17 +4,18 @@ import React, { useState } from 'react';
 import Countdown from 'react-countdown';
 import styled from 'styled-components';
 
+//? SOLANA
 import { shortenAddress } from '../candy-machine';
+import MintButton from './MintButton';
+import { useAnchorWallet } from '@solana/wallet-adapter-react';
 
-export interface Props {
-  wallet: any;
-  itemsAvailable: number;
-  itemsRedeemed: number;
-  itemsRemaining: number;
-  startDate: Date;
-}
-const MintContainer = (props: Props) => {
+//_ REDUX
+import { RootState } from '../redux/store';
+import { useSelector } from 'react-redux';
+
+const MintContainer = () => {
   const [isActive, setIsActive] = useState(false);
+  const wallet = useAnchorWallet();
 
   const renderCounter = ({ days, hours, minutes, seconds, completed }: any) => {
     return (
@@ -25,26 +26,48 @@ const MintContainer = (props: Props) => {
     );
   };
 
-  console.log(isActive);
+  const itemsRemaining = useSelector(
+    (state: RootState) => state.walletReducer.itemsRemaining,
+  );
+
+  const itemsAvailable = useSelector(
+    (state: RootState) => state.walletReducer.itemsAvailable,
+  );
+
+  const isStarted = useSelector(
+    (state: RootState) => state.walletReducer.isStarted,
+  );
+
+  const itemsRedeemed = useSelector(
+    (state: RootState) => state.walletReducer.itemsRemaining,
+  );
+
+  const startDate = useSelector(
+    (state: RootState) => state.walletReducer.startDate,
+  );
+  const balance = useSelector(
+    (state: RootState) => state.walletReducer.balance,
+  );
 
   return (
     <div>
       <StyledMintContainer>
         <h1>2 SOL</h1>
         <p>for each shark</p>
-        {props.wallet ? (
-          <p>
-            Wallet {shortenAddress(props.wallet.publicKey.toBase58() || '')}
-          </p>
+        {wallet ? (
+          <span>
+            <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || '')}</p>
+            <p>Balance: {balance} </p>
+          </span>
         ) : (
           <p>Wallet is not connected</p>
         )}
 
-        {isActive ? (
+        {isStarted ? (
           ''
         ) : (
           <Countdown
-            date={props.startDate}
+            date={startDate}
             onMount={({ completed }) => completed && setIsActive(true)}
             onComplete={() => setIsActive(true)}
             renderer={renderCounter}
@@ -53,26 +76,29 @@ const MintContainer = (props: Props) => {
 
         {/* //? item states */}
 
-        {props.wallet && props.itemsRemaining === 0 ? (
+        {wallet && itemsRemaining === 0 ? (
           <p>SOLD OUT</p>
         ) : (
           <div>
             {/* //? fixed amount, can be referred to itemsAvailable */}
             {isActive && <p>Total 10.000</p>}
-            {isActive && <p>Remaining {props.itemsRemaining}</p>}
-            {isActive && <p>Redeemed {props.itemsRedeemed}</p>}
+            {isActive && <p>Remaining {itemsRemaining}</p>}
+            {isActive && <p>Redeemed {itemsRedeemed}</p>}
           </div>
         )}
+
+        <MintButton />
       </StyledMintContainer>
     </div>
   );
 };
 
 const StyledMintContainer = styled.div`
+  color: wheat;
   margin-left: 100px;
-  width: 300px;
-  height: 300px;
-  background-color: aquamarine;
+  width: 350px;
+  height: 350px;
+  background-color: #003892;
   padding: 1rem;
   display: flex;
   align-items: center;
