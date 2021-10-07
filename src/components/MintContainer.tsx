@@ -12,19 +12,11 @@ import { useAnchorWallet } from '@solana/wallet-adapter-react';
 //_ REDUX
 import { RootState } from '../redux/store';
 import { useSelector } from 'react-redux';
+import CountdownComponent from './CountdownComponent';
 
 const MintContainer = () => {
   const [isActive, setIsActive] = useState(false);
   const wallet = useAnchorWallet();
-
-  const renderCounter = ({ days, hours, minutes, seconds, completed }: any) => {
-    return (
-      <p>
-        {days} days {hours + (24 % days || 1)} hours, {minutes} minutes,{' '}
-        {seconds} seconds
-      </p>
-    );
-  };
 
   const itemsRemaining = useSelector(
     (state: RootState) => state.walletReducer.itemsRemaining,
@@ -50,7 +42,7 @@ const MintContainer = () => {
   );
 
   return (
-    <div>
+    <Container>
       <StyledMintContainer>
         <h1>2 SOL</h1>
         <p>for each shark</p>
@@ -63,17 +55,6 @@ const MintContainer = () => {
           <p>Wallet is not connected</p>
         )}
 
-        {isStarted ? (
-          ''
-        ) : (
-          <Countdown
-            date={startDate}
-            onMount={({ completed }) => completed && setIsActive(true)}
-            onComplete={() => setIsActive(true)}
-            renderer={renderCounter}
-          />
-        )}
-
         {/* //? item states */}
 
         {wallet && itemsRemaining === 0 ? (
@@ -81,19 +62,22 @@ const MintContainer = () => {
         ) : (
           <div>
             {/* //? fixed amount, can be referred to itemsAvailable */}
-            {isActive && <p>Total 10.000</p>}
+            {isActive && <p>Total {itemsAvailable}</p>}
             {isActive && <p>Remaining {itemsRemaining}</p>}
             {isActive && <p>Redeemed {itemsRedeemed}</p>}
           </div>
         )}
-
-        <MintButton />
       </StyledMintContainer>
-    </div>
+
+      <StyledCountdownHeader>
+        <CountdownComponent />
+      </StyledCountdownHeader>
+    </Container>
   );
 };
 
 const StyledMintContainer = styled.div`
+  position: absolute;
   color: wheat;
   margin-left: 100px;
   width: 350px;
@@ -106,6 +90,20 @@ const StyledMintContainer = styled.div`
   border-style: solid;
   border-color: black;
   border-width: 1px;
+`;
+
+const StyledCountdownHeader = styled.div`
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+`;
+
+const Container = styled.div`
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  display: flex;
 `;
 
 export default MintContainer;
