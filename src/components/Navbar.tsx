@@ -1,40 +1,40 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { WalletDialogButton } from '@solana/wallet-adapter-material-ui';
-import styled from 'styled-components';
+import { useAnchorWallet } from '@solana/wallet-adapter-react';
+import { setBalance } from '../redux/slices/walletSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { LAMPORTS_PER_SOL } from '@solana/web3.js';
+import { RootState } from '../redux/store';
 
 const Navbar = () => {
+  const wallet = useAnchorWallet();
+
+  const connection = useSelector(
+    (state: RootState) => state.walletReducer.connection,
+  );
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    (async () => {
+      if (wallet) {
+        const balance = await connection.getBalance(wallet.publicKey);
+        dispatch(setBalance(balance / LAMPORTS_PER_SOL));
+        // setBalance(balance / LAMPORTS_PER_SOL);
+      }
+    })();
+  }, [wallet, connection]);
+
   return (
     <>
-      <StyledNav>
-        <StyledLogo>THE BATTLE ON SHARK SYSTEM </StyledLogo>
-        <StyledWalletDialogButton />
-      </StyledNav>
+      <nav className="flex items-center justify-center relative w-full h-36 ">
+        <div className="absolute right-5 top-4">
+          <WalletDialogButton />
+        </div>
+        <h1 className="text-5xl">THE BATTLE ON SHARK SYSTEM </h1>
+      </nav>
     </>
   );
 };
-
-const StyledWalletDialogButton = styled(WalletDialogButton)`
-  background-color: darkcyan;
-  position: absolute;
-  padding: 10rem;
-`;
-
-const StyledLogo = styled.h1`
-  position: absolute;
-  left: 40%;
-  /* vertically center the icon */
-  top: 50%;
-  transform: translateY(-50%);
-`;
-
-const StyledNav = styled.nav`
-  min-height: 10rem;
-  position: relative;
-  display: flex;
-  width: 100%;
-  align-items: center;
-
-  justify-content: flex-end;
-`;
 
 export default Navbar;

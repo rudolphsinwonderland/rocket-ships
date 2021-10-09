@@ -23,12 +23,10 @@ import {
   setItemsAvailable,
   setItemsRedeemed,
   setItemsRemaining,
-  setSoldOutTrue,
   setAlertState,
   setBalance,
 } from '../redux/slices/walletSlice';
 import { RootState } from '../redux/store';
-import styled from 'styled-components';
 
 const MintButton = () => {
   const [candyMachine, setCandyMachine] = useState<CandyMachine>();
@@ -198,6 +196,11 @@ const MintButton = () => {
       }
       dispatch(setIsMintingFalse());
 
+      setAlertState({
+        open: true,
+        message: 'Congratulations ! You have minted a Shark ',
+        severity: 'error',
+      });
       refreshCandyMachineState();
     }
   };
@@ -207,36 +210,24 @@ const MintButton = () => {
       {isSoldOut ? (
         ''
       ) : isStarted ? (
-        <StyledMintButton
+        <WalletDialogButton
           disabled={isSoldOut || isMinting || !isActive}
           onClick={onMint}
           variant="contained"
         >
           {isSoldOut ? (
-            <StyledButtonText>SOLD OUT</StyledButtonText>
+            <p>SOLD OUT</p>
           ) : isActive ? (
             <CircularProgress />
           ) : (
-            <StyledButtonText>MINT</StyledButtonText>
+            <p>MINT</p>
           )}
-        </StyledMintButton>
+        </WalletDialogButton>
       ) : (
         ''
       )}
     </div>
   );
 };
-
-const StyledMintButton = styled(WalletDialogButton)`
-  padding-left: 8px;
-  padding-right: 8px;
-  font-size: 1.2rem;
-`;
-
-const StyledButtonText = styled.p`
-  padding-left: 8px;
-  padding-right: 8px;
-  font-size: 1.2rem;
-`;
 
 export default MintButton;

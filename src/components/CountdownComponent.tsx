@@ -3,7 +3,8 @@ import Countdown from 'react-countdown';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
 import MintButton from './MintButton';
-import { useDispatch } from 'react-redux';
+import ReactPlayer from 'react-player';
+import cdvideo from '../images/videos/F5.mp4';
 
 import { setIsStartedTrue } from '../redux/slices/walletSlice';
 import styled from 'styled-components';
@@ -22,11 +23,15 @@ const CountdownComponent = () => {
       // Render a countdown
 
       return (
-        <StyledCountdownContainer>
-          <StyledCountdownText>
+        <div className="relative object-cover items-center justify-center">
+          {/* <div className="w-full h-45 object-cover absolute z-0">
+            <ReactPlayer playing loop muted url={cdvideo} />
+          </div> */}
+
+          <StyledSpan>
             Days: {days} Hours: {hours} Minutes: {minutes} Seconds: {seconds}
-          </StyledCountdownText>
-        </StyledCountdownContainer>
+          </StyledSpan>
+        </div>
       );
     }
   };
@@ -39,12 +44,9 @@ const CountdownComponent = () => {
   );
 };
 
-const StyledCountdownText = styled.span`
-  font-size: medium;
-`;
-
-const StyledCountdownContainer = styled.div`
-  background-color: blueviolet;
+const StyledSpan = styled.span`
+  font-family: 'Press Start 2P', cursive;
+  z-index: 1;
 `;
 
 export default CountdownComponent;
