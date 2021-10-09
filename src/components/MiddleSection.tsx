@@ -3,42 +3,33 @@ import styled from 'styled-components';
 
 function MiddleSection() {
   return (
-    <div className="w-full space-y-20 items-center justify-center">
-      <div>
-        <StyledVenus className="text-center">VENUS SWAMP CLAN</StyledVenus>
-        <div className="items-center justify-start flex space-x-8">
-          <div className="bg-red-500 w-40 h-40 rounded-full"></div>
-          <div className="bg-green-200 w-96 h-36 rounded-xl"></div>
+    <div className=" grid grid-cols-2 pb-20 ">
+      <div className="space-x-10 bg-transparent space-y-2 text-center pr-16 pb-24">
+        <StyledEarth>EARTH UNITED STATES</StyledEarth>
+        <div className="flex flex-row space-x-5">
+          <div className="rounded-full w-36 h-36 bg-black"></div>
+          <div className="w-96 h-36 bg-black"></div>
         </div>
       </div>
-      <div>
-        <StyledMars className="text-center">MARS MINING OPERATIONS</StyledMars>
-        <div className="items-center justify-start flex space-x-8">
-          <div className="bg-red-500 w-40 h-40 rounded-full"></div>
-          <div className="bg-green-200 w-96 h-36 rounded-xl"></div>
+      <div className="space-x-10 bg-transparent space-y-2 text-center">
+        <StyledInvaders>GALACTIC INVADERS</StyledInvaders>
+        <div className="flex flex-row space-x-5">
+          <div className="rounded-full w-36 h-36 bg-black"></div>
+          <div className="w-96 h-36 bg-black"></div>
         </div>
       </div>
-      <div>
-        <StyledEarth className="text-center">EARTH UNITED STATES</StyledEarth>
-        <div className="items-center justify-start flex space-x-8">
-          <div className="bg-red-500 w-40 h-40 rounded-full"></div>
-          <div className="bg-green-200 w-96 h-36 rounded-xl"></div>
+      <div className="space-x-10 bg-transparent space-y-2 text-center">
+        <StyledMars>MARS MINING OPERATIONS</StyledMars>
+        <div className="flex flex-row space-x-5">
+          <div className="rounded-full w-36 h-36 bg-black"></div>
+          <div className="w-96 h-36 bg-black"></div>
         </div>
       </div>
-      <div>
-        <StyledInvaders className="text-center">
-          GALACTIC SEA INVADERS
-        </StyledInvaders>
-        <div className="items-center justify-start flex space-x-8">
-          <div className="bg-red-500 w-40 h-40 rounded-full"></div>
-          <div className="bg-green-200 w-96 h-36 rounded-xl"></div>
-        </div>
-      </div>
-      <div>
-        <h1 className="text-center">ETERNALS</h1>
-        <div className="items-center justify-start flex space-x-8">
-          <div className="bg-red-500 w-40 h-40 rounded-full"></div>
-          <div className="bg-green-200 w-96 h-36 rounded-xl"></div>
+      <div className="space-x-10 bg-transparent space-y-2 text-center">
+        <StyledVenus>VENUS SWAMP CYNDICATE</StyledVenus>
+        <div className="flex flex-row space-x-5">
+          <div className="rounded-full w-36 h-36 bg-black"></div>
+          <div className="w-96 h-36 bg-black"></div>
         </div>
       </div>
     </div>
