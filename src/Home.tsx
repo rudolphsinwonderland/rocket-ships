@@ -12,6 +12,7 @@ import { setAlertState } from './redux/slices/walletSlice';
 
 import './styles/stars.scss';
 import MiddleSection from './components/MiddleSection';
+import Roadmap from './components/Roadmap';
 
 const Home = () => {
   const alertState = useSelector(
@@ -52,6 +53,9 @@ const Home = () => {
       </Snackbar>
       <div className="w-100 items-center justify-center pt-80">
         <MiddleSection />
+      </div>
+      <div className="px-40 mx-20 w-full py-32">
+        <Roadmap />
       </div>
     </div>
   );

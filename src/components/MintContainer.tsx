@@ -12,8 +12,6 @@ import bgvideo from '../images/videos/bg-noise.mp4';
 import ReactPlayer from 'react-player';
 import styled from 'styled-components';
 
-import '../styles/border.css';
-
 const MintContainer = () => {
   const wallet = useAnchorWallet();
 
@@ -38,7 +36,7 @@ const MintContainer = () => {
   );
 
   return (
-    <div className="w-screen  flex items-center justify-center space-x-44">
+    <div className="w-full  flex items-center justify-around p-10  space-x-44  ">
       <div className="sky">
         <div className="stars"></div>
         <div className="stars1"></div>
