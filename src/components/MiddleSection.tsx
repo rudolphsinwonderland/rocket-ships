@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import venusShark from '../images/venusShark.png';
 
 function MiddleSection() {
   return (
@@ -9,7 +10,9 @@ function MiddleSection() {
           UNITED STATES OF EARTH
         </StyledEarth>
         <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
-          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
+          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
+            <img className="rounded-full" src={venusShark} alt="venus shark" />
+          </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             All planets are corrupt and out of control. The brotherhood is
             broken. For the sake of the system, we need to get them under
@@ -24,7 +27,9 @@ function MiddleSection() {
           GALACTIC INVADERS
         </StyledInvaders>
         <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
-          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
+          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
+            <img className="rounded-full" src={venusShark} alt="venus shark" />
+          </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             At the Emperor's behest, we were assigned to explore and occupy new
             systems. We entered the system called the "Solar System" We are
@@ -39,7 +44,9 @@ function MiddleSection() {
           MARS MINING OPERATIONS
         </StyledMars>
         <div className="flex flex-col lg:flex-row space-x-5 items-center justify-center">
-          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
+          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
+            <img className="rounded-full" src={venusShark} alt="venus shark" />
+          </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             <p>
               Your Operation collecting slaves from all over the System. Our
@@ -56,7 +63,9 @@ function MiddleSection() {
           VENUS SWAMP SYNDICATE
         </StyledVenus>
         <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
-          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
+          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
+            <img className="rounded-full" src={venusShark} alt="venus shark" />
+          </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             The syndicate needs new victims to strengthen its power in the
             system. Syndicate mages continue to evolve with the spells they have
@@ -72,7 +81,9 @@ function MiddleSection() {
           ETERNALS
         </StyledEternals>
         <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
-          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
+          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
+            <img className="rounded-full" src={venusShark} alt="venus shark" />
+          </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             The Firstborns of the Cosmos blessed us and we ascended. We've
             traveled to thousands of galaxies. There is nothing we haven't seen.
