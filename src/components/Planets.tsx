@@ -28,6 +28,17 @@ const StyledMars = styled.div`
   top: -600px;
   z-index: 1;
   overflow: hidden;
+  animation: MoveUpDown 7s linear infinite;
+
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
 `;
 
 const StyledSaturn = styled.div`
@@ -38,6 +49,17 @@ const StyledSaturn = styled.div`
   top: 300px;
   z-index: 1;
   overflow: hidden;
+  animation: MoveUpDown 7s linear infinite;
+
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
 `;
 
 const StyledMoon = styled.div`
@@ -48,6 +70,18 @@ const StyledMoon = styled.div`
   top: -1200px;
   z-index: 1;
   overflow: hidden;
+
+  animation: MoveUpDown 7s linear infinite;
+
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
 `;
 
 export default Planets;
