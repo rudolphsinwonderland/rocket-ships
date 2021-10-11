@@ -10,7 +10,7 @@ function MiddleSection() {
         </StyledEarth>
         <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
-          <div className="w-96 h-36 text-left text-xl ">
+          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             All planets are corrupt and out of control. The brotherhood is
             broken. For the sake of the system, we need to get them under
             control now. It's up to us to restore order. Our armies are more
@@ -25,7 +25,7 @@ function MiddleSection() {
         </StyledInvaders>
         <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
-          <div className="w-96 h-36 text-left text-xl">
+          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             At the Emperor's behest, we were assigned to explore and occupy new
             systems. We entered the system called the "Solar System" We are
             always ready to fight to expand our Galactic Empire. Against our
@@ -40,7 +40,7 @@ function MiddleSection() {
         </StyledMars>
         <div className="flex flex-col lg:flex-row space-x-5 items-center justify-center">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
-          <div className="w-96 h-36 text-left text-xl">
+          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             <p>
               Your Operation collecting slaves from all over the System. Our
               planet needs sharkonium mines to power the colonies of Mars. Dust
@@ -57,7 +57,7 @@ function MiddleSection() {
         </StyledVenus>
         <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
-          <div className="w-96 h-36 text-left text-xl">
+          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             The syndicate needs new victims to strengthen its power in the
             system. Syndicate mages continue to evolve with the spells they have
             used since their ancient ancestors. Venus bounty hunters attack Mars
@@ -73,7 +73,7 @@ function MiddleSection() {
         </StyledEternals>
         <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
-          <div className="w-96 h-36 text-left text-xl">
+          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             The Firstborns of the Cosmos blessed us and we ascended. We've
             traveled to thousands of galaxies. There is nothing we haven't seen.
             We created suns and destroyed planets. No formation satisfies us

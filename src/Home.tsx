@@ -13,6 +13,7 @@ import { setAlertState } from './redux/slices/walletSlice';
 import './styles/stars.scss';
 import MiddleSection from './components/MiddleSection';
 import Roadmap from './components/Roadmap';
+import Planets from './components/Planets';
 
 const Home = () => {
   const alertState = useSelector(
@@ -28,6 +29,9 @@ const Home = () => {
         <div className="stars1"></div>
         <div className="stars2"></div>
         <div className="shooting-stars"></div>
+      </div>
+      <div className="hidden lg:block absolute ">
+        <Planets />
       </div>
 
       <div className="absolute left-0 top-0 w-screen pb-40">

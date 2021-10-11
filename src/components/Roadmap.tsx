@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function Roadmap() {
   return (
-    <div className="flex flex-row    w-full justify-evenly  ">
+    <div className="flex flex-col space-y-7 lg:space-y-0 lg:flex-row  w-full justify-evenly  ">
       <div className="text-center space-y-2">
         <h1 className="text-4xl border-b-2">PRE LAUNCH</h1>
         <StyledP>Building a Website for Sharks</StyledP>
@@ -22,7 +22,9 @@ function Roadmap() {
       <div className="text-center space-y-2">
         <h1 className="text-4xl border-b-2">AFTER LAUNCH</h1>
         <StyledP>Youtube Lo-fi Radio Channel</StyledP>
-        <StyledP>First Phase of Event for Eternal Holders</StyledP>
+        <StyledP>
+          First Phase of Event for Eternal Holders (Anually diffirent places){' '}
+        </StyledP>
         <StyledP>
           Special Gift Box for Eternals and Clan Leaders Holders
         </StyledP>
@@ -33,7 +35,7 @@ function Roadmap() {
 }
 
 const StyledP = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 `;
 
 export default Roadmap;
