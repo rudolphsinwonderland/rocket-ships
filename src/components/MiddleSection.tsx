@@ -74,12 +74,11 @@ function MiddleSection() {
         <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black"></div>
           <div className="w-96 h-36 text-left text-xl">
-            The syndicate needs new victims to strengthen its power in the
-            system. Syndicate mages continue to evolve with the spells they have
-            used since their ancient ancestors. Venus bounty hunters attack Mars
-            and Earth and hand over their loot to the mighty sorcerers. Great
-            mages with their life spells make Venus Syndicate members habitable
-            in their toxic seas.
+            The Firstborns of the Cosmos blessed us and we ascended. We've
+            traveled to thousands of galaxies. There is nothing we haven't seen.
+            We created suns and destroyed planets. No formation satisfies us
+            anymore. We travel the whole cosmos looking for something that will
+            excite us.
           </div>
         </div>
       </div>
