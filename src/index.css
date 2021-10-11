@@ -8,6 +8,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Cairo', sans-serif;
+
+  outline: 1px solid red;
 }
 
 .mint-container {

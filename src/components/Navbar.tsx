@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center justify-center relative w-full h-36 ">
+      <nav className="flex items-center justify-center relative w-full h-36  ">
         <div className="absolute right-5 top-4  hidden lg:block">
           <WalletDialogButton />
         </div>

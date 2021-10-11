@@ -23,18 +23,18 @@ const Home = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex items-center min-h-screen justify-center flex-col bg-blue-900  text-gray-100">
-      <div className="sky">
+    <div className="flex items-center min-h-screen justify-center flex-col bg-blue-900  text-gray-100 overflow-hidden">
+      {/* <div className="sky">
         <div className="stars"></div>
         <div className="stars1"></div>
         <div className="stars2"></div>
         <div className="shooting-stars"></div>
-      </div>
+      </div> */}
       <div className="hidden lg:block absolute ">
         <Planets />
       </div>
 
-      <div className="absolute left-0 top-0 w-screen pb-40">
+      <div className="absolute left-0 top-0 w-full pb-40">
         <Navbar />
       </div>
       <div className="pt-60">
