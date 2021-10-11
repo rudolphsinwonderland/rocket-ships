@@ -51,7 +51,7 @@ const Home = () => {
           {alertState.message}
         </Alert>
       </Snackbar>
-      <div className="w-100 items-center justify-center pt-80">
+      <div className="w-100 items-center justify-center pt-80 border-b-2 pb-32">
         <MiddleSection />
       </div>
       <div className="px-40 mx-20 w-full py-32">

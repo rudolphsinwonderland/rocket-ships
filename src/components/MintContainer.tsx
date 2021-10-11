@@ -36,7 +36,7 @@ const MintContainer = () => {
   );
 
   return (
-    <div className="w-full  flex items-center justify-around p-10  space-x-44  ">
+    <div className="w-full  flex flex-col space-y-10 lg:space-y-0 lg:flex-row  items-center justify-around p-10  lg:space-x-44  ">
       <div className="sky">
         <div className="stars"></div>
         <div className="stars1"></div>
