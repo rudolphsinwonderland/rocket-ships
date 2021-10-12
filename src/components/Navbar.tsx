@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="absolute right-5 top-4  hidden lg:block">
           <WalletDialogButton />
         </div>
-        <h1 className="text-5xl">THE BATTLE ON SHARK SYSTEM </h1>
+        <h1 className="text-5xl">SPACE SHARKS </h1>
       </nav>
     </>
   );

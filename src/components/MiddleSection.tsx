@@ -52,7 +52,7 @@ function MiddleSection() {
               Your Operation collecting slaves from all over the System. Our
               planet needs sharkonium mines to power the colonies of Mars. Dust
               storms, temperature and difficult living conditions, These
-              difficulties won't stop our operation, Raids on venus and earth,
+              difficulties won't stop our operation, raids on Venus and Earth,
               will continue.
             </p>
           </div>
