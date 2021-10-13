@@ -24,12 +24,12 @@ const Home = () => {
 
   return (
     <div className="flex items-center min-h-screen justify-center flex-col bg-blue-900  text-gray-100 overflow-hidden">
-      {/* <div className="sky">
+      <div className="sky">
         <div className="stars"></div>
         <div className="stars1"></div>
         <div className="stars2"></div>
         <div className="shooting-stars"></div>
-      </div> */}
+      </div>
       <div className="hidden lg:block absolute ">
         <Planets />
       </div>
