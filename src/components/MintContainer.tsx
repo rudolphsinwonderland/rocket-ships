@@ -11,6 +11,7 @@ import bgvideo from '../images/videos/bg-noise.mp4';
 //* REACT
 import ReactPlayer from 'react-player';
 import styled from 'styled-components';
+import MintButton from './MintButton';
 
 const MintContainer = () => {
   const wallet = useAnchorWallet();
@@ -28,7 +29,7 @@ const MintContainer = () => {
   );
 
   const itemsRedeemed = useSelector(
-    (state: RootState) => state.walletReducer.itemsRemaining,
+    (state: RootState) => state.walletReducer.itemsRedeemed,
   );
 
   const balance = useSelector(
@@ -37,13 +38,19 @@ const MintContainer = () => {
 
   return (
     <div className="w-full  flex flex-col space-y-10 lg:space-y-0 lg:flex-row  items-center justify-around p-10  lg:space-x-44  ">
+      <div className="sky">
+        <div className="stars"></div>
+        <div className="stars1"></div>
+        <div className="stars2"></div>
+        <div className="shooting-stars"></div>
+      </div>
       <div className="mint-container overflow-hidden">
         <div className="w-full h-45 object-cover absolute z-0 ">
           <ReactPlayer playing loop muted url={bgvideo} />
         </div>
 
         <div className="z-10 flex flex-col justify-center items-center">
-          <Styled2SOL>3 SOL</Styled2SOL>
+          <Styled2SOL>2 SOL</Styled2SOL>
           <MintContainerText>for each shark</MintContainerText>
           {wallet ? (
             <span>
@@ -61,27 +68,27 @@ const MintContainer = () => {
           {wallet && itemsRemaining === 0 && isStarted ? (
             <Styled2SOL>SOLD OUT</Styled2SOL>
           ) : (
-            <div>
-              {/* //? fixed amount, can be referred to itemsAvailable */}
-              {isStarted && (
-                <MintContainerText>Total {itemsAvailable}</MintContainerText>
-              )}
-              {isStarted && (
-                <MintContainerText>
-                  Remaining {itemsRemaining}
-                </MintContainerText>
-              )}
-              {isStarted && (
-                <MintContainerText>Redeemed {itemsRedeemed}</MintContainerText>
-              )}
-            </div>
+            ''
           )}
+
+          <div className="text-center">
+            {/* //? fixed amount, can be referred to itemsAvailable */}
+            {isStarted && wallet && (
+              <MintContainerText>Total {itemsAvailable}</MintContainerText>
+            )}
+            {isStarted && wallet && (
+              <MintContainerText>Remaining {itemsRemaining}</MintContainerText>
+            )}
+            {isStarted && wallet && (
+              <MintContainerText>Redeemed {itemsRedeemed}</MintContainerText>
+            )}
+          </div>
+
+          {isStarted && wallet ? <MintButton /> : ''}
         </div>
       </div>
 
-      <div>
-        <CountdownComponent />
-      </div>
+      <div>{isStarted ? '' : <CountdownComponent />}</div>
     </div>
   );
 };

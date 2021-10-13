@@ -23,7 +23,7 @@ export interface CounterState {
 }
 
 const initialState: CounterState = {
-  tsxTimeout: 0,
+  tsxTimeout: 1000,
   rpcHost: process.env.REACT_APP_SOLANA_RPC_HOST!,
   connection: new anchor.web3.Connection(
     process.env.REACT_APP_SOLANA_RPC_HOST!,
@@ -41,9 +41,9 @@ const initialState: CounterState = {
   isMinting: false,
   itemsAvailable: 0,
   itemsRedeemed: 0,
-  isStarted: false,
+  isStarted: true,
   itemsRemaining: 0,
-  startDate: new Date('13 Oct 2021 12:00:00 GMT'),
+  startDate: new Date('13 Oct 2021 7:43:00 GMT'),
   alertState: {
     open: false,
     message: '',

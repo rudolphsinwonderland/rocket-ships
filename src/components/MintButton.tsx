@@ -61,6 +61,9 @@ const MintButton = () => {
   const txTimeout = useSelector(
     (state: RootState) => state.walletReducer.tsxTimeout,
   );
+  const alertState = useSelector(
+    (state: RootState) => state.walletReducer.alertState,
+  );
 
   const wallet = useAnchorWallet();
 
@@ -79,10 +82,6 @@ const MintButton = () => {
         candyMachineId,
         connection,
       );
-      console.log(candyMachine);
-      console.log(goLiveDate);
-      console.log(itemsAvailable);
-      console.log(itemsRedeemed);
 
       dispatch(setStartDate(goLiveDate));
       dispatch(setItemsAvailable(itemsAvailable));
@@ -109,6 +108,18 @@ const MintButton = () => {
 
   useEffect(refreshCandyMachineState, [wallet, candyMachineId, connection]);
 
+  const MintButton = () => {
+    return (
+      <WalletDialogButton
+        disabled={isSoldOut || isMinting || isActive}
+        onClick={onMint}
+        variant="contained"
+      >
+        <p> MINT</p>
+      </WalletDialogButton>
+    );
+  };
+
   const onMint = async () => {
     try {
       dispatch(setIsMintingTrue());
@@ -121,9 +132,7 @@ const MintButton = () => {
           wallet.publicKey,
           treasury,
         );
-        console.log('pass');
 
-        console.log('tsx conf');
         const status = await awaitTransactionSignatureConfirmation(
           mintTxId,
           txTimeout,
@@ -131,10 +140,11 @@ const MintButton = () => {
           'singleGossip',
           false,
         );
-        console.log('pass');
 
-        console.log('if status err');
+        console.log(status);
+
         if (!status?.err) {
+          console.log('hello');
           dispatch(
             setAlertState({
               open: true,
@@ -155,7 +165,7 @@ const MintButton = () => {
     } catch (error: any) {
       // TODO: blech:
       let message = error.msg || 'Minting failed! Please try again!';
-      console.log(message);
+
       switch (message) {
         case 'Candy machine is empty!':
           dispatch(
@@ -211,25 +221,8 @@ const MintButton = () => {
 
   return (
     <div>
-      {isSoldOut ? (
-        ''
-      ) : isStarted ? (
-        <WalletDialogButton
-          disabled={isSoldOut || isMinting || !isActive}
-          onClick={onMint}
-          variant="contained"
-        >
-          {isSoldOut ? (
-            <p>SOLD OUT</p>
-          ) : isActive ? (
-            <CircularProgress />
-          ) : (
-            <p>MINT</p>
-          )}
-        </WalletDialogButton>
-      ) : (
-        ''
-      )}
+      {isSoldOut ? <p>SOlD OUT</p> : ''}
+      {isMinting ? <CircularProgress /> : MintButton()}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import Countdown from 'react-countdown';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../redux/store';
 import MintButton from './MintButton';
 
@@ -8,9 +8,15 @@ import { setIsStartedTrue } from '../redux/slices/walletSlice';
 import styled from 'styled-components';
 
 const CountdownComponent = () => {
+  const startDateLocal = new Date('13 Oct 2021 09:06:00 GMT');
+
   const startDate = useSelector(
     (state: RootState) => state.walletReducer.startDate,
   );
+  const isStarted = useSelector(
+    (state: RootState) => state.walletReducer.isStarted,
+  );
+  const dispatch = useDispatch();
 
   // Renderer callback with condition
   const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
@@ -35,8 +41,8 @@ const CountdownComponent = () => {
   };
   return (
     <Countdown
-      date={startDate}
-      onComplete={() => setIsStartedTrue()}
+      date={startDateLocal}
+      onComplete={() => dispatch(setIsStartedTrue())}
       renderer={renderer}
     />
   );

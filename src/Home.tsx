@@ -14,6 +14,7 @@ import './styles/stars.scss';
 import MiddleSection from './components/MiddleSection';
 import Roadmap from './components/Roadmap';
 import Planets from './components/Planets';
+import Footer from './components/Footer';
 
 const Home = () => {
   const alertState = useSelector(
@@ -61,6 +62,7 @@ const Home = () => {
       <div className="px-40 mx-20 w-full py-32">
         <Roadmap />
       </div>
+      <Footer />
     </div>
   );
 };
