@@ -37,13 +37,6 @@ const MintContainer = () => {
 
   return (
     <div className="w-full  flex flex-col space-y-10 lg:space-y-0 lg:flex-row  items-center justify-around p-10  lg:space-x-44  ">
-      <div className="sky z-0">
-        <div className="stars"></div>
-        <div className="stars1"></div>
-        <div className="stars2"></div>
-        <div className="shooting-stars"></div>
-      </div>
-
       <div className="mint-container overflow-hidden">
         <div className="w-full h-45 object-cover absolute z-0 ">
           <ReactPlayer playing loop muted url={bgvideo} />
@@ -65,7 +58,7 @@ const MintContainer = () => {
 
           {/* //? item states */}
 
-          {wallet && itemsRemaining === 0 ? (
+          {wallet && itemsRemaining === 0 && isStarted ? (
             <Styled2SOL>SOLD OUT</Styled2SOL>
           ) : (
             <div>
