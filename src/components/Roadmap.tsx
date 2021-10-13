@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function Roadmap() {
   return (
-    <div className="flex flex-col justify-center items-center space-y-12">
+    <div className="flex flex-col justify-center items-center space-y-24">
       <h1 className="text-7xl">ROADMAP</h1>
       <div className="flex flex-col space-y-7 lg:space-y-0 lg:flex-row  w-full justify-evenly  ">
         <div className="text-center  space-y-8 lg:space-y-2">

@@ -5,15 +5,15 @@ import venusShark from '../images/venusShark.png';
 function MiddleSection() {
   return (
     <div className="flex flex-col  lg:grid  lg:grid-cols-2  lg:gap-16">
-      <div className="space-x-10 bg-transparent space-y-2 text-center py-10 ">
+      <div className="lg:space-x-10 bg-transparent space-y-2 text-center py-10 ">
         <StyledEarth className="text-2xl lg:text-4xl">
           UNITED STATES OF EARTH
         </StyledEarth>
-        <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
+        <div className="flex flex-col lg:flex-row  lg:space-x-5 items-center justify-center m-0">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
             <img className="rounded-full" src={venusShark} alt="venus shark" />
           </div>
-          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
+          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal ">
             All planets are corrupt and out of control. The brotherhood is
             broken. For the sake of the system, we need to get them under
             control now. It's up to us to restore order. Our armies are more
@@ -22,15 +22,15 @@ function MiddleSection() {
           </div>
         </div>
       </div>
-      <div className="space-x-10 bg-transparent space-y-2 text-center py-10">
+      <div className="lg:space-x-10 bg-transparent space-y-2 text-center py-10 ">
         <StyledInvaders className="text-2xl lg:text-4xl">
           GALACTIC INVADERS
         </StyledInvaders>
-        <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
+        <div className="flex flex-col lg:flex-row  lg:space-x-5 items-center justify-center">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
             <img className="rounded-full" src={venusShark} alt="venus shark" />
           </div>
-          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
+          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal m-0">
             At the Emperor's behest, we were assigned to explore and occupy new
             systems. We entered the system called the "Solar System" We are
             always ready to fight to expand our Galactic Empire. Against our
@@ -39,16 +39,16 @@ function MiddleSection() {
           </div>
         </div>
       </div>
-      <div className="space-x-10 bg-transparent space-y-2 text-center py-10">
+      <div className="lg:space-x-10 bg-transparent space-y-2 text-center py-10 m-0">
         <StyledMars className="text-2xl lg:text-4xl">
           MARS MINING OPERATIONS
         </StyledMars>
-        <div className="flex flex-col lg:flex-row space-x-5 items-center justify-center">
+        <div className="flex flex-col lg:flex-row lg:space-x-5 items-center justify-center">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
             <img className="rounded-full" src={venusShark} alt="venus shark" />
           </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
-            <p>
+            <p className="m-0">
               Your Operation collecting slaves from all over the System. Our
               planet needs sharkonium mines to power the colonies of Mars. Dust
               storms, temperature and difficult living conditions, These
@@ -58,15 +58,15 @@ function MiddleSection() {
           </div>
         </div>
       </div>
-      <div className="space-x-10 bg-transparent space-y-2 text-center py-10">
+      <div className="lg:space-x-10 bg-transparent space-y-2 text-center py-10 m-0">
         <StyledVenus className="text-2xl lg:text-4xl">
           VENUS SWAMP SYNDICATE
         </StyledVenus>
-        <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
+        <div className="flex flex-col lg:flex-row  lg:space-x-5 items-center justify-center">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
             <img className="rounded-full" src={venusShark} alt="venus shark" />
           </div>
-          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
+          <div className="w-96 h-36 text-left text-lg md:text-xl font-normal ">
             The syndicate needs new victims to strengthen its power in the
             system. Syndicate mages continue to evolve with the spells they have
             used since their ancient ancestors. Venus bounty hunters attack Mars
@@ -76,11 +76,11 @@ function MiddleSection() {
           </div>
         </div>
       </div>
-      <div className="pt-24 space-x-10 bg-transparent space-y-2 text-center py-10 lg:col-span-2 ">
+      <div className="pt-24 lg:space-x-10 bg-transparent space-y-2 text-center py-10 lg:col-span-2 ">
         <StyledEternals className="text-2xl lg:text-4xl">
           ETERNALS
         </StyledEternals>
-        <div className="flex flex-col lg:flex-row  space-x-5 items-center justify-center">
+        <div className="flex flex-col lg:flex-row  lg:space-x-5 items-center justify-center m-0">
           <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
             <img className="rounded-full" src={venusShark} alt="venus shark" />
           </div>
