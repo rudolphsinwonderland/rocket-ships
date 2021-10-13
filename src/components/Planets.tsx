@@ -10,10 +10,10 @@ const Planets = () => {
       <StyledMars id="mars">
         <img src={mars} alt="mars" />
       </StyledMars>
-      <StyledSaturn id="saturn ">
+      <StyledSaturn id="saturn">
         <img src={saturn} alt="saturn" />
       </StyledSaturn>
-      <StyledMoon id="moon ">
+      <StyledMoon id="moon">
         <img src={moon} alt="moon" />
       </StyledMoon>
     </div>
@@ -25,10 +25,10 @@ const StyledMars = styled.div`
   height: 300px;
   position: absolute;
   left: 500px;
-  top: -600px;
+  top: -800px;
   z-index: 1;
   overflow: hidden;
-  animation: MoveUpDown 7s linear infinite;
+  animation: MoveUpDown 8s linear infinite;
 
   @keyframes MoveUpDown {
     0%,
