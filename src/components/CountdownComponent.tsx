@@ -3,8 +3,6 @@ import Countdown from 'react-countdown';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
 import MintButton from './MintButton';
-import ReactPlayer from 'react-player';
-import cdvideo from '../images/videos/F5.mp4';
 
 import { setIsStartedTrue } from '../redux/slices/walletSlice';
 import styled from 'styled-components';

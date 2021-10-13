@@ -79,6 +79,10 @@ const MintButton = () => {
         candyMachineId,
         connection,
       );
+      console.log(candyMachine);
+      console.log(goLiveDate);
+      console.log(itemsAvailable);
+      console.log(itemsRedeemed);
 
       dispatch(setStartDate(goLiveDate));
       dispatch(setItemsAvailable(itemsAvailable));
