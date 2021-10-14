@@ -8,7 +8,7 @@ import { setIsStartedTrue } from '../redux/slices/walletSlice';
 import styled from 'styled-components';
 
 const CountdownComponent = () => {
-  const startDateLocal = new Date('13 Oct 2021 09:06:00 GMT');
+  const startDateLocal = new Date('14 Oct 2021 09:06:00 GMT');
 
   const startDate = useSelector(
     (state: RootState) => state.walletReducer.startDate,
@@ -40,11 +40,14 @@ const CountdownComponent = () => {
     }
   };
   return (
-    <Countdown
-      date={startDateLocal}
-      onComplete={() => dispatch(setIsStartedTrue())}
-      renderer={renderer}
-    />
+    // <Countdown
+    //   date={startDate}
+    //   onComplete={() => dispatch(setIsStartedTrue())}
+    //   renderer={renderer}
+    // />
+    <div>
+      <StyledSpan>TO BE ANNOUNCED</StyledSpan>
+    </div>
   );
 };
 

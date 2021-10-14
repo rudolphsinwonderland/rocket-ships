@@ -8,7 +8,9 @@ function Roadmap() {
       <div className="flex flex-col space-y-7 lg:space-y-0 lg:flex-row  w-full justify-evenly  ">
         <div className="text-center  space-y-8 lg:space-y-2">
           <h1 className="text-4xl border-b-2">PRE LAUNCH</h1>
-          <StyledP>- Building a Website for Sharks</StyledP>
+          <StyledP>
+            - Building a Website for Sharks (under construction)
+          </StyledP>
           <StyledP>- Creating Community Channels</StyledP>
           <StyledP>- Marketing Agreements & Campaigns</StyledP>
           <StyledP>- Giveaways</StyledP>

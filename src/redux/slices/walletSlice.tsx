@@ -41,9 +41,9 @@ const initialState: CounterState = {
   isMinting: false,
   itemsAvailable: 0,
   itemsRedeemed: 0,
-  isStarted: true,
+  isStarted: false,
   itemsRemaining: 0,
-  startDate: new Date('13 Oct 2021 7:43:00 GMT'),
+  startDate: new Date('14 Oct 2021 8:35:00 GMT'),
   alertState: {
     open: false,
     message: '',
