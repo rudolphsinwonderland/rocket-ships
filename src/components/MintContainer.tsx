@@ -50,7 +50,7 @@ const MintContainer = () => {
         </div>
 
         <div className="z-10 flex flex-col justify-center items-center">
-          <Styled2SOL>2 SOL</Styled2SOL>
+          <Styled2SOL>3 SOL</Styled2SOL>
           <MintContainerText>for each shark</MintContainerText>
           {wallet ? (
             <span>
@@ -88,7 +88,9 @@ const MintContainer = () => {
         </div>
       </div>
 
+      {/* //! activate when started */}
       <div>{isStarted ? '' : <CountdownComponent />}</div>
+      {/* <CountdownComponent /> */}
     </div>
   );
 };

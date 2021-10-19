@@ -6,6 +6,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { LAMPORTS_PER_SOL } from '@solana/web3.js';
 import { RootState } from '../redux/store';
 
+import logo from '../images/logo1.png';
+import styled from 'styled-components';
+
 const Navbar = () => {
   const wallet = useAnchorWallet();
 
@@ -27,14 +30,25 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center justify-center relative w-full h-36  ">
+      <nav className="flex items-center justify-center relative w-full h-60   ">
         <div className="absolute right-5 top-4  hidden lg:block">
           <WalletDialogButton />
         </div>
-        <h1 className="text-5xl">SPACE SHARKS </h1>
+
+        <StyledImg src={logo} alt="SPACE SHARKS" />
       </nav>
     </>
   );
 };
+
+const StyledImg = styled.img`
+  width: 700px;
+  height: 400px;
+
+  @media (max-width: 700px) {
+    width: 350px;
+    height: 200px;
+  }
+`;
 
 export default Navbar;

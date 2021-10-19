@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import venusShark from '../images/venusShark.png';
+import venusShark from '../images/BG_sample_VENUS.png';
+import marsShark from '../images/BG_sample_MARS.png';
+import eternalShark from '../images/BG_sample_ETERNAL.png';
+import galacticShark from '../images/BG_sample_GALACTIC.png';
+import earthShark from '../images/BG_sample_EARTH.png';
 
 function MiddleSection() {
   return (
@@ -10,8 +14,8 @@ function MiddleSection() {
           UNITED STATES OF EARTH
         </StyledEarth>
         <div className="flex flex-col lg:flex-row  lg:space-x-5 items-center justify-center m-0">
-          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
-            <img className="rounded-full" src={venusShark} alt="venus shark" />
+          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 z-20">
+            <img className="rounded-full" src={earthShark} alt="venus shark" />
           </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal ">
             All planets are corrupt and out of control. The brotherhood is
@@ -27,8 +31,12 @@ function MiddleSection() {
           GALACTIC INVADERS
         </StyledInvaders>
         <div className="flex flex-col lg:flex-row  lg:space-x-5 items-center justify-center">
-          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
-            <img className="rounded-full" src={venusShark} alt="venus shark" />
+          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 z-20">
+            <img
+              className="rounded-full"
+              src={galacticShark}
+              alt="venus shark"
+            />
           </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal m-0">
             At the Emperor's behest, we were assigned to explore and occupy new
@@ -44,8 +52,8 @@ function MiddleSection() {
           MARS MINING OPERATIONS
         </StyledMars>
         <div className="flex flex-col lg:flex-row lg:space-x-5 items-center justify-center">
-          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
-            <img className="rounded-full" src={venusShark} alt="venus shark" />
+          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 z-20">
+            <img className="rounded-full" src={marsShark} alt="venus shark" />
           </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             <p className="m-0">
@@ -63,8 +71,8 @@ function MiddleSection() {
           VENUS SWAMP SYNDICATE
         </StyledVenus>
         <div className="flex flex-col lg:flex-row  lg:space-x-5 items-center justify-center">
-          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
-            <img className="rounded-full" src={venusShark} alt="venus shark" />
+          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 z-20 ">
+            <img className="rounded-full " src={venusShark} alt="venus shark" />
           </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal ">
             The syndicate needs new victims to strengthen its power in the
@@ -81,8 +89,12 @@ function MiddleSection() {
           ETERNALS
         </StyledEternals>
         <div className="flex flex-col lg:flex-row  lg:space-x-5 items-center justify-center m-0">
-          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 bg-black">
-            <img className="rounded-full" src={venusShark} alt="venus shark" />
+          <div className="rounded-full w-36 h-36 lg:w-44 lg:h-44 z-20">
+            <img
+              className="rounded-full"
+              src={eternalShark}
+              alt="venus shark"
+            />
           </div>
           <div className="w-96 h-36 text-left text-lg md:text-xl font-normal">
             The Firstborns of the Cosmos blessed us and we ascended. We've
