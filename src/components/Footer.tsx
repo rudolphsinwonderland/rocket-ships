@@ -13,7 +13,7 @@ function Footer() {
         </a>
       </div>
       <p className="text-center">all rights reserved ©</p>
-      <p className="text-center">Created by Squid Studios</p>
+      <p className="text-center">Created by NEOTECH ART</p>
     </div>
   );
 }

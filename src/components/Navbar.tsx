@@ -42,12 +42,12 @@ const Navbar = () => {
 };
 
 const StyledImg = styled.img`
-  width: 700px;
-  height: 400px;
+  width: 750px;
+  height: 500px;
 
   @media (max-width: 700px) {
-    width: 350px;
-    height: 200px;
+    width: 450px;
+    height: 300px;
   }
 `;
 
