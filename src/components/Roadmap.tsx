@@ -18,15 +18,10 @@ function Roadmap() {
           <StyledP>- Building rarity tools and armory</StyledP>
         </div>
         <div className="text-center">
-          <h1 className="text-4xl border-b-2  pb-2">PRE LAUNCH</h1>
-          <StyledP>
-            - Building a Website for Sharks (under construction)
-          </StyledP>
-          <StyledP>- Creating Community Channels</StyledP>
-          <StyledP>- Marketing Agreements & Campaigns</StyledP>
-          <StyledP>- Giveaways</StyledP>
-          <StyledP>- Listings on Marketplaces</StyledP>
-          <StyledP>- Building rarity tools and armory</StyledP>
+          <h1 className="text-4xl border-b-2  pb-2">LAUNCH</h1>
+          <StyledP>- Rarity Tool release</StyledP>
+          <StyledP>- Donation to Ocean, Clean Water Charities</StyledP>
+          <StyledP>- Armory Launch</StyledP>
         </div>
         <div className="text-center">
           <h1 className="text-4xl border-b-2 pb-2">AFTER LAUNCH</h1>
