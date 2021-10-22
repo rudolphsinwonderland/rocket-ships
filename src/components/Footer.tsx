@@ -8,7 +8,7 @@ function Footer() {
         <a href="https://twitter.com/SpaceSharksNFT">
           <FaTwitter size="5rem" />
         </a>
-        <a href="https://discord.gg/xBeZYBUQ">
+        <a href="https://discord.gg/krw4MPKAdV">
           <FaDiscord size="5rem" />
         </a>
       </div>

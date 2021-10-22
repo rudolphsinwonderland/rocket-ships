@@ -25,7 +25,7 @@ const StyledMars = styled.div`
   height: 300px;
   position: absolute;
   left: 500px;
-  top: -800px;
+  top: -1400px;
   z-index: 1;
   overflow: hidden;
   animation: MoveUpDown 8s linear infinite;
@@ -46,7 +46,7 @@ const StyledSaturn = styled.div`
   height: 500px;
   position: absolute;
   left: -900px;
-  top: 300px;
+  top: -400px;
   z-index: 1;
   overflow: hidden;
   animation: MoveUpDown 7s linear infinite;
@@ -67,7 +67,7 @@ const StyledMoon = styled.div`
   height: 300px;
   position: absolute;
   left: -900px;
-  top: -1200px;
+  top: -2000px;
   z-index: 1;
   overflow: hidden;
 
