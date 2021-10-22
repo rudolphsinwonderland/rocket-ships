@@ -15,6 +15,7 @@ import MiddleSection from './components/MiddleSection';
 import Roadmap from './components/Roadmap';
 import Planets from './components/Planets';
 import Footer from './components/Footer';
+import FAQ from './components/FAQ';
 
 const Home = () => {
   const alertState = useSelector(
@@ -62,6 +63,9 @@ const Home = () => {
       <div className="px-40 mx-20 w-full py-32">
         <Roadmap />
       </div>
+      {/* <div className="py-32 w-full mx-20 px-40" id="faq">
+        <FAQ />
+      </div> */}
       <Footer />
     </div>
   );
