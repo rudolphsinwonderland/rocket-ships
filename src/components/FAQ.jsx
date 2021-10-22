@@ -15,12 +15,13 @@ const FAQ = () => {
   const [accordion8, setAccordion8] = useState(false);
 
   return (
-    <div className="items-center justify-center text-center space-y-10">
-      <h1 className=" text-4xl lg:text-7xl border-b-2 py-4">FAQ</h1>
+    <div className="items-center justify-center text-center space-y-10 md:space-y-10">
+      <h1 className="text-4xl lg:text-7xl border-b-2 py-4">FAQ</h1>
+
       {/* //? what is eternals */}
       <StyledFAQcontainer isOpen={accordion1}>
         <h1
-          className="text-2xl flex flex-row items-center justify-center space-x-10 text-center cursor-pointer "
+          className="text-2xl flex flex-row items-center justify-center lg:space-x-10 text-center lg:cursor-pointer "
           onClick={() => setAccordion1(!accordion1)}
         >
           <p>WHAT IS ETERNALS ?</p>
@@ -36,10 +37,10 @@ const FAQ = () => {
       {/* //? when mint */}
       <StyledFAQcontainer isOpen={accordion2}>
         <h1
-          className="text-2xl flex flex-row items-center justify-center space-x-10 text-center cursor-pointer "
+          className="text-2xl flex flex-row items-center justify-center lg:space-x-10 text-center lg:cursor-pointer "
           onClick={() => setAccordion2(!accordion2)}
         >
-          <p>WHEN MINT?</p>
+          <p>WHEN MINT ?</p>
           <FaArrowDown id="arrow" />
         </h1>
         <StyledDropdown isOpen={accordion2}>
@@ -50,7 +51,7 @@ const FAQ = () => {
       {/* //? what is mint pirce */}
       <StyledFAQcontainer isOpen={accordion3}>
         <h1
-          className="text-2xl flex flex-row items-center justify-center space-x-10 text-center cursor-pointer "
+          className="text-2xl flex flex-row items-center justify-center lg:space-x-10 text-center lg:cursor-pointer "
           onClick={() => setAccordion3(!accordion3)}
         >
           <p>MINT PRICE ?</p>
@@ -64,7 +65,7 @@ const FAQ = () => {
       {/* //? game  */}
       <StyledFAQcontainer isOpen={accordion4}>
         <h1
-          className="text-2xl flex flex-row items-center justify-center space-x-10 text-center cursor-pointer "
+          className="text-2xl flex flex-row items-center justify-center lg:space-x-10 text-center lg:cursor-pointer "
           onClick={() => setAccordion4(!accordion4)}
         >
           <p>GAME ?</p>
@@ -80,7 +81,7 @@ const FAQ = () => {
       {/* //? listings */}
       <StyledFAQcontainer isOpen={accordion5}>
         <h1
-          className="text-2xl flex flex-row items-center justify-center space-x-10 text-center cursor-pointer "
+          className="text-2xl flex flex-row items-center justify-center lg:space-x-10 text-center lg:cursor-pointer "
           onClick={() => setAccordion5(!accordion5)}
         >
           <p>LISTINGS ?</p>
@@ -92,9 +93,10 @@ const FAQ = () => {
           </StyledAnswer>
         </StyledDropdown>
       </StyledFAQcontainer>
+      {/* //? giftbox  */}
       <StyledFAQcontainer isOpen={accordion6}>
         <h1
-          className="text-2xl flex flex-row items-center justify-center space-x-10 text-center cursor-pointer "
+          className="text-2xl flex flex-row items-center justify-center lg:space-x-10 text-center lg:cursor-pointer "
           onClick={() => setAccordion6(!accordion6)}
         >
           <p>A GIFTBOX ?</p>
@@ -113,6 +115,11 @@ const StyledFAQcontainer = styled.div`
   justify-content: center;
   text-align: center;
   height: 5rem;
+  margin: 0;
+  @media (max-width: 700px) {
+    height: 300px;
+    width: 300px;
+  }
 
   #arrow {
     transition: all 0.3s ease-in;
@@ -124,6 +131,11 @@ const StyledDropdown = styled.div`
   transition: all 0.3s ease-in-out;
 
   display: ${props => (props.isOpen ? 'block' : 'none')};
+
+  @media (max-width: 700px) {
+    height: 300px;
+    width: 100%;
+  }
 `;
 
 const StyledAnswer = styled.p`

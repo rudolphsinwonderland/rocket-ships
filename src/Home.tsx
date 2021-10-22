@@ -63,7 +63,7 @@ const Home = () => {
       <div className="px-40 mx-20 w-full py-32">
         <Roadmap />
       </div>
-      <div className="py-32 w-full mx-20 px-40" id="faq">
+      <div className="py-32 w-full lg:mx-20 lg:px-40" id="faq">
         <FAQ />
       </div>
       <Footer />
