@@ -44,7 +44,7 @@ const MintContainer = () => {
         <div className="stars2"></div>
         <div className="shooting-stars"></div>
       </div>
-      <div className="mint-container overflow-hidden">
+      <div className="mint-container overflow-hidden rounded-md">
         <div className="w-full h-45 object-cover absolute z-0 ">
           <ReactPlayer playing loop muted url={bgvideo} />
         </div>
