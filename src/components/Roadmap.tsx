@@ -34,7 +34,7 @@ function Roadmap() {
             - Special Gift Box for Eternals and Clan Leaders Holders
           </StyledP>
           <StyledP>- Merch Shop Launch</StyledP>
-          <StyledP>- A video game only for Space Sharks holders</StyledP>
+          <StyledP>- A board game for Space Sharks !</StyledP>
         </div>
       </div>
     </div>
