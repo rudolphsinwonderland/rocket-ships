@@ -62,7 +62,7 @@ const FAQ = () => {
         </StyledDropdown>
       </StyledFAQcontainer>
 
-      {/* //? game  */}
+      {/* //? game 
       <StyledFAQcontainer isOpen={accordion4}>
         <h1
           className="text-2xl flex flex-row items-center justify-center lg:space-x-10 text-center lg:cursor-pointer "
@@ -77,7 +77,7 @@ const FAQ = () => {
             obviously, Roadmap after launch
           </StyledAnswer>
         </StyledDropdown>
-      </StyledFAQcontainer>
+      </StyledFAQcontainer> */}
       {/* //? listings */}
       <StyledFAQcontainer isOpen={accordion5}>
         <h1

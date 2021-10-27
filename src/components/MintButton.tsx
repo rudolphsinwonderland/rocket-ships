@@ -141,8 +141,6 @@ const MintButton = () => {
           false,
         );
 
-        console.log(status);
-
         if (!status?.err) {
           console.log('hello');
           dispatch(
@@ -180,22 +178,6 @@ const MintButton = () => {
         default:
           break;
       }
-      //   if (!error.msg) {
-      //     if (error.message.indexOf('0x138')) {
-      //     } else if (error.message.indexOf('0x137')) {
-      //       message = `SOLD OUT!`;
-      //     } else if (error.message.indexOf('0x135')) {
-      //       message = `Insufficient funds to mint. Please fund your wallet.`;
-      //     }
-      //   } else {
-      //     if (error.code === 311) {
-      //       message = `SOLD OUT!`;
-      //       dispatch(setSoldOutTrue());
-      //       //   setIsSoldOut(true);
-      //     } else if (error.code === 312) {
-      //       message = `Minting period hasn't started yet.`;
-      //     }
-      //   }
 
       setAlertState({
         open: true,
