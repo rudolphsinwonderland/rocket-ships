@@ -29,8 +29,7 @@ const FAQ = () => {
         </h1>
         <StyledDropdown isOpen={accordion1}>
           <StyledAnswer className="py-5">
-            Eternals are a rare faction of Space Sharks, when you hold an
-            Eternal, you're able to join events organizated by team annually.
+            Eternals are a rare faction of Space Sharks
           </StyledAnswer>
         </StyledDropdown>
       </StyledFAQcontainer>
@@ -89,7 +88,7 @@ const FAQ = () => {
         </h1>
         <StyledDropdown isOpen={accordion5}>
           <StyledAnswer className="py-5">
-            Planned to be on Solanart and Digitaleyes.
+            Planned to be on Solanart, Magic Eden, Exchange.art and Digitaleyes.
           </StyledAnswer>
         </StyledDropdown>
       </StyledFAQcontainer>
