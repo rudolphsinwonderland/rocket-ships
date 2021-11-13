@@ -26,13 +26,8 @@ function Roadmap() {
         <div className="text-center">
           <h1 className="text-4xl border-b-2 pb-2">AFTER LAUNCH</h1>
           <StyledP>- Youtube Lo-fi Radio Channel</StyledP>
-          <StyledP>
-            - First Phase of Event for Eternal Holders (Anually diffirent
-            places){' '}
-          </StyledP>
-          <StyledP>
-            - Special Gift Box for Eternals and Clan Leaders Holders
-          </StyledP>
+          <StyledP>- First Phase of Event for Space observing</StyledP>
+          <StyledP>- Special Gift Box for Eternals</StyledP>
           <StyledP>- Merch Shop Launch</StyledP>
           {/* <StyledP>- A board game for Space Sharks !</StyledP> */}
         </div>
