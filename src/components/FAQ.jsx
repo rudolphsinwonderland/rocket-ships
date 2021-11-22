@@ -8,11 +8,8 @@ const FAQ = () => {
   const [accordion1, setAccordion1] = useState(false);
   const [accordion2, setAccordion2] = useState(false);
   const [accordion3, setAccordion3] = useState(false);
-  const [accordion4, setAccordion4] = useState(false);
+
   const [accordion5, setAccordion5] = useState(false);
-  const [accordion6, setAccordion6] = useState(false);
-  const [accordion7, setAccordion7] = useState(false);
-  const [accordion8, setAccordion8] = useState(false);
 
   return (
     <div className="items-center justify-center text-center space-y-10 md:space-y-10">
@@ -43,7 +40,7 @@ const FAQ = () => {
           <FaArrowDown id="arrow" />
         </h1>
         <StyledDropdown isOpen={accordion2}>
-          <StyledAnswer className="py-5">to be announced.</StyledAnswer>
+          <StyledAnswer className="py-5">30 NOVEMBER 18:00 UTC</StyledAnswer>
         </StyledDropdown>
       </StyledFAQcontainer>
 
@@ -57,7 +54,7 @@ const FAQ = () => {
           <FaArrowDown id="arrow" />
         </h1>
         <StyledDropdown isOpen={accordion3}>
-          <StyledAnswer className="py-5">to be announced.</StyledAnswer>
+          <StyledAnswer className="py-5">0.3 SOL</StyledAnswer>
         </StyledDropdown>
       </StyledFAQcontainer>
 
@@ -90,19 +87,6 @@ const FAQ = () => {
           <StyledAnswer className="py-5">
             Planned to be on Solanart, Magic Eden, Exchange.art and Digitaleyes.
           </StyledAnswer>
-        </StyledDropdown>
-      </StyledFAQcontainer>
-      {/* //? giftbox  */}
-      <StyledFAQcontainer isOpen={accordion6}>
-        <h1
-          className="text-2xl flex flex-row items-center justify-center lg:space-x-10 text-center lg:cursor-pointer "
-          onClick={() => setAccordion6(!accordion6)}
-        >
-          <p>A GIFTBOX ?</p>
-          <FaArrowDown id="arrow" />
-        </h1>
-        <StyledDropdown isOpen={accordion6}>
-          <StyledAnswer className="py-5">Surprise.</StyledAnswer>
         </StyledDropdown>
       </StyledFAQcontainer>
     </div>
