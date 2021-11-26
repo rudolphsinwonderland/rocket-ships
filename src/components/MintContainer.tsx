@@ -74,11 +74,9 @@ const MintContainer = () => {
           <div className="text-center">
             {/* //? fixed amount, can be referred to itemsAvailable */}
             {isStarted && wallet && (
-              <MintContainerText>Total {itemsAvailable}</MintContainerText>
+              <MintContainerText>Total 4444</MintContainerText>
             )}
-            {isStarted && wallet && (
-              <MintContainerText>Remaining {itemsRemaining}</MintContainerText>
-            )}
+
             {isStarted && wallet && (
               <MintContainerText>Redeemed {itemsRedeemed}</MintContainerText>
             )}
