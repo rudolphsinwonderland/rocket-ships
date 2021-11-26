@@ -12,6 +12,7 @@ import bgvideo from '../images/videos/bg-noise.mp4';
 import ReactPlayer from 'react-player';
 import styled from 'styled-components';
 import MintButton from './MintButton';
+import { useState, useEffect } from 'react';
 
 const MintContainer = () => {
   const wallet = useAnchorWallet();
@@ -82,7 +83,11 @@ const MintContainer = () => {
             )}
           </div>
 
-          {isStarted && wallet ? <MintButton /> : ''}
+          {/* {(itemsRedeemed === 4444)! && isStarted && wallet ? (
+            <MintButton />
+          ) : (
+            ''
+          )} */}
         </div>
       </div>
 
