@@ -83,8 +83,8 @@ const MintContainer = () => {
               <MintContainerText>Redeemed {itemsRedeemed}</MintContainerText>
             )}
           </div>
-
-          {isStarted && wallet ? <MintButton /> : ''}
+          <MintButton />
+          {/* {isStarted && wallet ? <MintButton /> : ''} */}
         </div>
       </div>
 
