@@ -83,11 +83,7 @@ const MintContainer = () => {
             )}
           </div>
 
-          {/* {(itemsRedeemed === 4444)! && isStarted && wallet ? (
-            <MintButton />
-          ) : (
-            ''
-          )} */}
+          {itemsRedeemed !== 4444 && <MintButton />}
         </div>
       </div>
 
