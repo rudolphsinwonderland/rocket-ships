@@ -66,11 +66,11 @@ const MintContainer = () => {
 
           {/* //? item states */}
 
-          {wallet && itemsRemaining === 0 && isStarted ? (
+          {/* {wallet && itemsRemaining === 0 && isStarted ? (
             <Styled2SOL>SOLD OUT</Styled2SOL>
           ) : (
             ''
-          )}
+          )} */}
 
           <div className="text-center">
             {/* //? fixed amount, can be referred to itemsAvailable */}
@@ -88,7 +88,7 @@ const MintContainer = () => {
       </div>
 
       {/* //! activate when started */}
-      <div>{isStarted ? '' : <CountdownComponent />}</div>
+      {/* <div>{isStarted ? '' : <CountdownComponent />}</div> */}
       {/* <CountdownComponent /> */}
     </div>
   );
