@@ -51,7 +51,7 @@ const MintContainer = () => {
         </div>
 
         <div className="z-10 flex flex-col justify-center items-center">
-          <Styled2SOL>0.3 SOL</Styled2SOL>
+          <Styled2SOL>0.05 SOL</Styled2SOL>
           <MintContainerText>for each shark</MintContainerText>
           {wallet ? (
             <span>
