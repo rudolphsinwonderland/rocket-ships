@@ -83,7 +83,7 @@ const MintContainer = () => {
             )}
           </div>
 
-          {itemsRedeemed !== 4444 && <MintButton />}
+          {itemsRedeemed < 4443 && <MintButton />}
         </div>
       </div>
 
