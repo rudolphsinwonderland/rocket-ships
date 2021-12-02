@@ -71,7 +71,9 @@ const MintContainer = () => {
           ) : (
             ''
           )} */}
-
+          {console.log(
+            'yes bravo you found out there are 7777 supply, anyway it was told to 3333 will be burned. checkout the discord',
+          )}
           <div className="text-center">
             {/* //? fixed amount, can be referred to itemsAvailable */}
             {isStarted && wallet && (
