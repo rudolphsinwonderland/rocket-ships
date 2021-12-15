@@ -10,7 +10,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "./redux/store";
 import { setAlertState } from "./redux/slices/walletSlice";
 
-import "./styles/stars.scss";
 import "./styles/snow.css";
 import styled from "styled-components";
 import Nftinfo from "./components/Nftinfo";
