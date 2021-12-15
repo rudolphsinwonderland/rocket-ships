@@ -16,6 +16,7 @@ import styled from "styled-components";
 import Nftinfo from "./components/Nftinfo";
 import Navbar from "./components/Navbar";
 import MintButton from "./components/MintButton";
+import Rewards from "./components/Rewards";
 
 const Home = () => {
   const alertState = useSelector(
@@ -74,6 +75,7 @@ const Home = () => {
       <img src={rocketship} alt="" />
       <MintButton />
       <Nftinfo />
+      <Rewards />
       <Snackbar
         open={alertState.open}
         autoHideDuration={6000}
