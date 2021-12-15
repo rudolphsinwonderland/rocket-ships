@@ -1,7 +1,7 @@
 import { Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 
-import rocketship from "./images/1.png";
+import rocketship from "./images/tcket.jpeg";
 
 //? IMPORT COMPONENTS
 
@@ -11,6 +11,7 @@ import { RootState } from "./redux/store";
 import { setAlertState } from "./redux/slices/walletSlice";
 
 import "./styles/stars.scss";
+import "./styles/snow.css";
 import styled from "styled-components";
 import Nftinfo from "./components/Nftinfo";
 import Navbar from "./components/Navbar";
@@ -24,17 +25,53 @@ const Home = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex items-center min-h-screen justify-center flex-col bg-blue-900  text-gray-100 overflow-hidden">
-      <div className="sky">
-        <div className="stars"></div>
-        <div className="stars1"></div>
-        <div className="stars2"></div>
-        <div className="shooting-stars"></div>
+    <div className="flex items-center min-h-screen justify-center flex-col bg-blue-500  text-gray-100 overflow-hidden">
+      <div className="snowflakes" aria-hidden="true">
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
+        <div className="snowflake">■</div>
       </div>
       <Navbar />
-      <StyledShip>
+      {/* <StyledShip>
         <img src={rocketship} alt="rocketship" />
-      </StyledShip>
+      </StyledShip> */}
+      <img src={rocketship} alt="" />
       <MintButton />
       <Nftinfo />
       <Snackbar

@@ -5,7 +5,7 @@ const Navbar = () => {
     <div>
       <nav className="flex items-center justify-center relative w-full h-60   ">
         <StyledHeader className="text-5xl lg:text-7xl ">
-          SOLANA BLUE CHIP ROCKET SHIP
+          SOL NEW YEAR LOTTERY
         </StyledHeader>
       </nav>
     </div>
@@ -13,7 +13,7 @@ const Navbar = () => {
 };
 
 const StyledHeader = styled.h1`
-  font-family: "Changa", sans-serif;
+  font-family: "Press Start 2P", cursive;
 `;
 
 export default Navbar;
