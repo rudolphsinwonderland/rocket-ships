@@ -7,11 +7,9 @@ const Rewards = () => {
         <div className="items-center text-center mt-20 space-y-2">
           <StyledHone className="text-5xl underline">REWARDS</StyledHone>
           <StyledP className="text-xl">Winner ticket 40% of pool</StyledP>
-          <StyledP className="text-xl">
-            Last 3 numbers are same: 4% each
-          </StyledP>
-          <StyledP className="text-xl">Second big winner 10%</StyledP>
-          <StyledP className="text-xl">4th & 5th winner 5%</StyledP>
+          <StyledP className="text-xl">Second big winner 20%</StyledP>
+          <StyledP className="text-xl">3rd & 4th winner 5%</StyledP>
+          <StyledP className="text-xl">40 winner up to 1 SOL</StyledP>
         </div>
       </div>
     </div>
