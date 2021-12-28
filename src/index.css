@@ -9,7 +9,10 @@
   box-sizing: border-box;
   font-family: 'Cairo', sans-serif;
 }
-
+.bg-custom
+{
+  background-color: #3fb3fd;
+}
 .mint-container {
   display: flex;
   position: relative;

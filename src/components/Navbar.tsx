@@ -5,7 +5,7 @@ const Navbar = () => {
     <div>
       <nav className="flex items-center justify-center relative w-full h-60   ">
         <StyledHeader className="text-5xl lg:text-7xl ">
-          SOL NEW YEAR LOTTERY
+          RUDOLPHS IN WONDERLAND
         </StyledHeader>
       </nav>
     </div>
