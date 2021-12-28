@@ -1,7 +1,7 @@
 import { Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 
-import rocketship from "./images/tcket.jpeg";
+import rudolph from "./images/9.png";
 
 //? IMPORT COMPONENTS
 
@@ -25,7 +25,7 @@ const Home = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex items-center min-h-screen justify-center flex-col bg-blue-500  text-gray-100 overflow-hidden">
+    <div className="flex items-center min-h-screen justify-center flex-col bg-custom   text-gray-100 overflow-hidden">
       <div className="snowflakes" aria-hidden="true">
         <div className="snowflake">■</div>
         <div className="snowflake">■</div>
@@ -71,7 +71,10 @@ const Home = () => {
       {/* <StyledShip>
         <img src={rocketship} alt="rocketship" />
       </StyledShip> */}
-      <img src={rocketship} alt="" />
+      <div className="max-w-lg"> 
+      <img src={rudolph} alt="" />
+
+      </div>
       <MintButton />
       <Nftinfo />
       <Rewards />
