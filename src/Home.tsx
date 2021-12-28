@@ -75,7 +75,7 @@ const Home = () => {
       <img src={rudolph} alt="" />
 
       </div>
-      <MintButton />
+      {/*<MintButton />*/}
       <Nftinfo />
       <Rewards />
       <Snackbar
