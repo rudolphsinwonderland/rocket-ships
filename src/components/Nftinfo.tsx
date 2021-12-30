@@ -11,7 +11,7 @@ function Nftinfo() {
         <StyledP className="text-xl">
           ROYALITIES 5% (all going to charity)
         </StyledP>
-        <StyledP className="text-xl">MINT DATE 30 DECEMBER</StyledP>
+        <StyledP className="text-xl">MINT DATE 31 DECEMBER</StyledP>
       </StyledNav>
     </StyledNav>
   );
